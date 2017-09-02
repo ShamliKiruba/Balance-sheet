@@ -1,0 +1,73 @@
+.container {
+	background-color: #dedede;
+	height: 627px;
+}
+.heading {
+	background-color: #d0d0d0;
+	padding: 10px;
+    text-align: center;
+}
+.btn {
+	font-size: 12px;
+}
+.child {
+	padding: 0;
+	margin: 25px;
+	background-color: #f3f3f3;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.account, .content {
+	display: flex;
+	justify-content: space-around;
+}
+.content {
+	padding: 10px;
+}
+.form {
+    padding: 10px;
+}
+.type {
+	border: none;
+	box-shadow: none;
+	padding: 6px;
+    background-color: #f3f3f3;
+}
+.type input:last-child {
+	margin-left: 5px;
+}
+button {
+	align-self: center;
+	margin: 10px;
+}
+table {
+	border: 1px solid #d0d0d0;
+	width: 100%;
+} 
+thead, table tr:nth-child(even) {
+	background-color: #dedede;
+}
+.form-control {
+	margin: 0 10px;
+}
+.row, .form {
+	display: flex;
+	flex-direction: column;
+}
+td, th {
+	text-align: center;
+	padding: 5px;
+}
+@media (min-width: 993px) {
+    .container {
+        max-width: 800px;
+    }
+    .child {
+    	margin: 25px auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	.container {
+        max-width: 600px;
+    }
+}

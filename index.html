@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balance Sheet</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="jQuery.js"></script>
+	<script src="index.js"></script>
+	<script src="i.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 child" id="balance">
+			<div class="heading">
+				<label>Balance</label>
+			</div>
+			<div class="content"></div>
+		</div>
+		<div class="col-md-10 child">
+			<div class="heading">
+				<label>My Expenditure</label>
+			</div>
+			<div class="form">
+				<div class="account">
+					<label> Amount </label>
+					<label> Details </label>
+					<label> Account </label>
+					<label> Account Type </label>
+				</div>
+				<div class="account">
+					<input type="text" id="amount" class="form-control" placeholder="Enter Amount"/>
+					<input type="text" id="details" class="form-control" placeholder="Enter Details"/>
+					<select id="accountSelection" class="form-control">
+						<option selected="true"> Select Option</option>
+						<option value='1'> Account 1 </option>
+						<option value='2'> Account 2 </option>
+					</select>
+					<div class="form-control type">
+						<input type="radio" value="Credit" name="accountType" checked> Credit </input>
+						<input type="radio" value="Debit" name="accountType"> Debit </input>	
+					</div>
+				</div>
+				<button id='addTransaction' class="btn btn-info">
+					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+					ADD
+				</button>
+			</div>
+		</div>
+		<div class="col-md-10 child">
+			<table id='transactionTable' border="1">
+				<thead>
+					<th>#</th>
+					<th>Amount</th>
+					<th>Details</th>
+					<th>Account</th>
+					<th>Account Type</th>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>
